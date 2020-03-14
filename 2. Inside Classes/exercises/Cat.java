@@ -30,14 +30,32 @@ public class Cat {
 			System.out.println("DEAD CAT :(");
 	}
 
-	public static void main(String[] args) {
+	
+	@Override
+	public String toString() {
+		return "Cat [name=" + name + ", lives=" + lives + "]";
+	}
+
+	public static void main(String[] args)
+	{
 		/* Do the following things without changing the Cat class */
 
 		// 1. Make the Cat meow
+		Cat garfield = new Cat("Garfield");
+		System.out.println(garfield);
 		
 		// 2. Get the Cat to print it's name
-
+		garfield.printName();
 		// 3. Kill the Cat!
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
+		garfield.kill();
 
 	}
 }
